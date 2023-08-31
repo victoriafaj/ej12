@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Estilo de Lista de Países</title>
+</head>
+<body>
+    <h2>Lista de Países</h2>
+    <ul id="listaPaises">
+        <li>Estados Unidos</li>
+        <li>Canadá</li>
+        <li>México</li>
+    </ul>
+    
+    <button id="cambiarEstiloBtn">Cambiar Estilo de Lista</button>
+    
+    <script>
+        const listaPaises = document.getElementById('listaPaises');
+        const cambiarEstiloBtn = document.getElementById('cambiarEstiloBtn');
+        
+        cambiarEstiloBtn.addEventListener('click', () => {
+            listaPaises.style.listStyleType = 'square'; // Cambiar el estilo de viñetas a cuadrados
+            listaPaises.style.color = 'green'; // Cambiar el color del texto de la lista
+            listaPaises.style.fontFamily = 'Arial'; // Cambiar la fuente del texto de la lista
+        });
+    </script>
+</body>
+</html>
